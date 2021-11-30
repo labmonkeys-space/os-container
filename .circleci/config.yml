@@ -29,7 +29,11 @@ workflows:
     jobs:
       - alpine-3-12:
           context: "Publishing"
+      - alpine-3-13:
+          context: "Publishing"
       - alpine-3-14:
+          context: "Publishing"
+      - alpine-3-15:
           context: "Publishing"
       - centos-8:
           context: "Publishing"
@@ -44,11 +48,23 @@ jobs:
       - make-image:
           workdir: "./alpine-3.12"
 
+  alpine-3-13:
+    executor: build-executor
+    steps:
+      - make-image:
+          workdir: "./alpine-3.13"
+
   alpine-3-14:
     executor: build-executor
     steps:
       - make-image:
           workdir: "./alpine-3.14"
+
+  alpine-3-15:
+    executor: build-executor
+    steps:
+      - make-image:
+          workdir: "./alpine-3.15"
 
   centos-8:
     executor: build-executor
