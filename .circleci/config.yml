@@ -39,7 +39,13 @@ workflows:
           context: "Publishing"
       - debian-10:
           context: "Publishing"
+      - debian-11:
+          context: "Publishing"
       - ubuntu-20-04:
+          context: "Publishing"
+      - ubuntu-21-10:
+          context: "Publishing"
+      - ubuntu-22-04:
           context: "Publishing"
 jobs:
   alpine-3-12:
@@ -71,14 +77,33 @@ jobs:
     steps:
       - make-image:
           workdir: "./centos-8"
+
   debian-10:
     executor: build-executor
     steps:
       - make-image:
           workdir: "./debian-10"
 
+  debian-11:
+    executor: build-executor
+    steps:
+      - make-image:
+          workdir: "./debian-11"
+
   ubuntu-20-04:
     executor: build-executor
     steps:
       - make-image:
           workdir: "./ubuntu-20.04"
+
+  ubuntu-21-10:
+    executor: build-executor
+    steps:
+      - make-image:
+          workdir: "./ubuntu-21.10"
+
+  ubuntu-22-04:
+    executor: build-executor
+    steps:
+      - make-image:
+          workdir: "./ubuntu-22.04"
