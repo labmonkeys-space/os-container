@@ -1,1 +1,1 @@
-debian:bullseye-20211115-slim
+debian:bullseye-20211201-slim
