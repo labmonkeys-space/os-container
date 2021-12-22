@@ -19,6 +19,7 @@ commands:
       - run:
           name: Build OCI image and publish from main branch
           command: |
+            cd << parameters.workdir >> && pwd
             if git show --name-only --format='' . | grep ""; then
               echo "Changes detected trigger build"
               if [[ "${CIRCLE_BRANCH}" == "main" ]]; then make publish BUILD_VERSION_SUFFIX=".b${CIRCLE_BUILD_NUM}"; else make oci; fi
