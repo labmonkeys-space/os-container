@@ -1,1 +1,1 @@
-ubuntu:focal-20211006
+ubuntu:focal-20220105
