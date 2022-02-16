@@ -41,6 +41,8 @@ workflows:
           context: "Publishing"
       - centos-8:
           context: "Publishing"
+      - centos-9:
+          context: "Publishing"
       - debian-10:
           context: "Publishing"
       - debian-11:
@@ -81,6 +83,12 @@ jobs:
     steps:
       - make-image:
           workdir: "./centos-8"
+
+  centos-9:
+    executor: build-executor
+    steps:
+      - make-image:
+          workdir: "./centos-9"
 
   debian-10:
     executor: build-executor

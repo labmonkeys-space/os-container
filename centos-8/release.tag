@@ -1,1 +1,1 @@
-centos:8.4.2105
+centos:stream8
