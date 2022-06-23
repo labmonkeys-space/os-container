@@ -1,1 +1,1 @@
-ubuntu:jammy-20220428
+ubuntu:jammy-20220531
