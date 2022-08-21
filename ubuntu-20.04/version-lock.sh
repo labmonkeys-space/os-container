@@ -7,4 +7,4 @@ DATE="$(date -u +"%Y-%m-%dT%H:%M:%SZ")"
 export VCS_SOURCE
 export VCS_REVISION
 export DATE
-export BASE_IMAGE="ubuntu:focal-20220531"
+export BASE_IMAGE="ubuntu:focal-20220801"
