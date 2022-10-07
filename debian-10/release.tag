@@ -1,1 +1,1 @@
-debian:buster-20220801-slim
+debian:buster-20220912-slim
