@@ -1,1 +1,1 @@
-centos:stream8-20221007
+centos:stream8-20221122
