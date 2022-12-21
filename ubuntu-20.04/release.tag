@@ -1,1 +1,1 @@
-ubuntu:focal-20221019
+ubuntu:focal-20221130
