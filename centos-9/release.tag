@@ -1,1 +1,1 @@
-centos:stream9-20221221
+centos:stream9-20230131
