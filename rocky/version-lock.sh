@@ -7,4 +7,4 @@ DATE="$(date -u +"%Y-%m-%dT%H:%M:%SZ")"
 export VCS_SOURCE
 export VCS_REVISION
 export DATE
-export BASE_IMAGE="alpine:3.16.4"
+export BASE_IMAGE="docker.io/rockylinux:9.1.20230215-minimal"

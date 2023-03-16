@@ -31,66 +31,42 @@ workflows:
 
   build:
     jobs:
-      - alpine-3-15:
+      - alpine:
           context: "Publishing"
-      - alpine-3-16:
+      - centos:
           context: "Publishing"
-      - alpine-3-17:
+      - debian:
           context: "Publishing"
-      - centos-8:
-          context: "Publishing"
-      - centos-9:
-          context: "Publishing"
-      - debian-10:
-          context: "Publishing"
-      - debian-11:
+      - rocky:
           context: "Publishing"
       - ubuntu-20-04:
           context: "Publishing"
       - ubuntu-22-04:
           context: "Publishing"
 jobs:
-  alpine-3-15:
+  alpine:
     executor: build-executor
     steps:
       - make-image:
-          workdir: "./alpine-3.15"
+          workdir: "./alpine"
 
-  alpine-3-16:
+  centos:
     executor: build-executor
     steps:
       - make-image:
-          workdir: "./alpine-3.16"
+          workdir: "./centos"
 
-  alpine-3-17:
+  debian:
     executor: build-executor
     steps:
       - make-image:
-          workdir: "./alpine-3.17"
+          workdir: "./debian"
 
-  centos-8:
+  rocky:
     executor: build-executor
     steps:
       - make-image:
-          workdir: "./centos-8"
-
-  centos-9:
-    executor: build-executor
-    steps:
-      - make-image:
-          workdir: "./centos-9"
-
-  debian-10:
-    executor: build-executor
-    steps:
-      - make-image:
-          workdir: "./debian-10"
-
-  debian-11:
-    executor: build-executor
-    steps:
-      - make-image:
-          workdir: "./debian-11"
+          workdir: "./rocky"
 
   ubuntu-20-04:
     executor: build-executor
