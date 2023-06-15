@@ -39,8 +39,6 @@ workflows:
           context: "Publishing"
       - rocky:
           context: "Publishing"
-      - ubuntu-20-04:
-          context: "Publishing"
       - ubuntu-22-04:
           context: "Publishing"
 jobs:
@@ -67,12 +65,6 @@ jobs:
     steps:
       - make-image:
           workdir: "./rocky"
-
-  ubuntu-20-04:
-    executor: build-executor
-    steps:
-      - make-image:
-          workdir: "./ubuntu-20.04"
 
   ubuntu-22-04:
     executor: build-executor
