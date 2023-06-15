@@ -1,1 +1,1 @@
-debian:bullseye-20230411-slim
+debian:trixie-20230612-slim

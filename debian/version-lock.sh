@@ -7,4 +7,4 @@ DATE="$(date -u +"%Y-%m-%dT%H:%M:%SZ")"
 export VCS_SOURCE
 export VCS_REVISION
 export DATE
-export BASE_IMAGE="debian:bullseye-20230411-slim"
+export BASE_IMAGE="debian:trixie-20230612-slim"
