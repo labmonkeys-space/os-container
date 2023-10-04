@@ -7,4 +7,4 @@ DATE="$(date -u +"%Y-%m-%dT%H:%M:%SZ")"
 export VCS_SOURCE
 export VCS_REVISION
 export DATE
-export BASE_IMAGE="alpine:3.18.2"
+export BASE_IMAGE="alpine:3.18.4"
