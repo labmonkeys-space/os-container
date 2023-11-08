@@ -1,1 +1,1 @@
-debian:trixie-20230919-slim
+debian:trixie-20231030-slim
