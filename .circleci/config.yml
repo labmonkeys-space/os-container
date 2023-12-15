@@ -33,8 +33,6 @@ workflows:
     jobs:
       - alpine:
           context: "Publishing"
-      - centos:
-          context: "Publishing"
       - debian:
           context: "Publishing"
       - rocky:
@@ -47,12 +45,6 @@ jobs:
     steps:
       - make-image:
           workdir: "./alpine"
-
-  centos:
-    executor: build-executor
-    steps:
-      - make-image:
-          workdir: "./centos"
 
   debian:
     executor: build-executor

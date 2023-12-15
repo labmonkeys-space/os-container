@@ -1,1 +1,1 @@
-rocky:9.2.20230513-minimal
+rocky:9.3.20231119-minimal
