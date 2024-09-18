@@ -1,1 +1,1 @@
-debian:trixie-20240904-slim
+debian:bookworm-20240904-slim
