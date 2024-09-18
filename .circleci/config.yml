@@ -37,7 +37,7 @@ workflows:
           context: "Publishing"
       - rocky:
           context: "Publishing"
-      - ubuntu-22-04:
+      - ubuntu:
           context: "Publishing"
 jobs:
   alpine:
@@ -58,8 +58,8 @@ jobs:
       - make-image:
           workdir: "./rocky"
 
-  ubuntu-22-04:
+  ubuntu:
     executor: build-executor
     steps:
       - make-image:
-          workdir: "./ubuntu-22.04"
+          workdir: "./ubuntu"
