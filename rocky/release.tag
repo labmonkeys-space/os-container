@@ -1,1 +1,1 @@
-rocky:9.4.20240509-minimal
+rockylinux:9.4.20240523-minimal
