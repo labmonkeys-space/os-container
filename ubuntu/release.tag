@@ -1,1 +1,1 @@
-ubuntu:noble-20240827.1
+ubuntu:noble-20241118.1

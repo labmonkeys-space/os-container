@@ -1,1 +1,1 @@
-debian:bookworm-20240904-slim
+debian:bookworm-20241202-slim
